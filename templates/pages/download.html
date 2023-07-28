@@ -1,7 +1,33 @@
-{% extends 'base.html' %}
+{% extends "base.html"%} 
+{% load static %} 
+{% block download %}
 
-{% block downloads %}
 
-<h1>Download</h1>
+<h1 class="mt-5 text-center">Download</h1>
 
-{% endblock downloads %}
+    <div class="container mt-5 mb-5 w-50">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">First</th>
+                <th scope="col" class="text-right">Download</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mark</td>
+                <td class="text-right"><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>Jacob</td>
+                <td class="text-right"><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>Larry</td>
+                <td class="text-right"><a href="#">Download</a></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+{% endblock download%}
